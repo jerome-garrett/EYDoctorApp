@@ -1,0 +1,18 @@
+<h3>Doctor Details</h3>
+<div class="container">
+  <dl>
+    <dt>Name</dt>
+    <dd>{{doctor.name}}</dd>
+
+    <dt>Medical School</dt>
+    <dd>{{doctor.medicalSchool}}</dd>
+    
+    <dt>Languages Spoken</dt>
+    <dd>{{doctor.languages}}</dd>
+
+    <dt>Patient Ratings</dt>
+    <dd *ngFor="let r of doctor.patientRatings">
+      Comment: {{ r.comments }}  - Rating: {{ r.rating }}
+    </dd>
+  </dl>
+</div>
